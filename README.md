@@ -1,2 +1,2 @@
-# babel-webpack-npm-starter
+# Babel + Webpack NPM Starter
 Babel + Webpack starter for npm package authoring
