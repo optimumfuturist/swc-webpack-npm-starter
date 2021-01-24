@@ -39,7 +39,7 @@
     "build": "npm run test && npm run clean && webpack --progress --mode='production'",
     "prettify": "prettier --write ./src",
     "lint": "eslint ./src --fix",
-    "start-all": "concurrently 'serve examples' 'npm run dev'",
+    "start-all": "concurrently 'serve -l 5001 examples' 'npm run dev'",
 		"start": "serve examples",
 		"docs": "./node_modules/.bin/jsdoc -c jsdoc.conf.json",
 		"start:docs": "concurrently 'npm run docs' 'serve -l 5002 docs'"
