@@ -1,0 +1,18 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"commonjs": true
+	},
+	"extends": ["eslint:recommended", "prettier"],
+	"plugins": ["import", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": 11,
+		"sourceType": "module"
+	},
+	"ignorePatterns": ["**/dist/**", "**/lib/**", "**/module/**", "**/docs/**"],
+	"rules": {
+		"prettier/prettier": ["error"]
+	}
+}

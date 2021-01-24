@@ -1,0 +1,65 @@
+{
+  "name": "@optimumfuturist/babel-webpack-npm-starter",
+  "version": "1.0.0",
+  "description": "Babel + Webpack starter for npm package authoring",
+  "main": "./lib/package.bundled.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/optimumfuturist/babel-webpack-npm-starter.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "npm",
+    "boilerplate",
+    "starter",
+    "template",
+    "es6",
+    "esnext",
+    "umd",
+    "amd",
+    "commonjs"
+  ],
+  "author": "Optimum Futurist Tech, Inc. <engineering@optimumfuturist.com> (http://www.optimumfuturist.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/optimumfuturist/babel-webpack-npm-starter/issues"
+  },
+  "homepage": "https://github.com/optimumfuturist/babel-webpack-npm-starter#readme",
+  "scripts": {
+    "test": "Echo 'test'",
+    "clean": "rimraf ./lib/**",
+    "dev": "webpack -w --progress --mode='development' --devtool='inline-source-map'",
+    "build": "npm run test && npm run clean && webpack --progress --mode='production'",
+    "prettify": "prettier --write ./src",
+    "lint": "eslint ./src --fix",
+    "start-all": "concurrently 'serve examples' 'npm run dev'",
+		"start": "serve examples",
+		"docs": "./node_modules/.bin/jsdoc -c jsdoc.conf.json",
+		"start:docs": "concurrently 'npm run docs' 'serve -l 5002 docs'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "better-docs": "2.3.2",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jsdoc": "3.6.6",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.2",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
