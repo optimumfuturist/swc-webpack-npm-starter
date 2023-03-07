@@ -1,11 +1,11 @@
 {
 	"source": {
-		"include": ["./README.md", "./src/"],
+		"include": ["./README.md", "./src"],
 		"exclude": "./node_modules/"
 	},
-    "opts": {
-		"destination": "./docs/",
+  "opts": {
+		"destination": "./docs",
 		"recurse": true,
-		"template": "node_modules/better-docs"
+		"template": "./node_modules/better-docs/"
 	}
 }

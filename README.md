@@ -46,7 +46,6 @@ These npm scripts can be executed by typing `npm run <command>` in your terminal
 | `build` | Runs Webpack in production mode, meant for publishing to npm |
 | `clean` | Clean **lib** directory |
 | `test` | Run your tests |
-| `prettify` | Prettify your code using prettier |
 | `lint` | Run linting for all codes in **src** directory and fix |
 | `start` | Starts a web server from **examples** directory, meant for browser testing |
 | `start:all` | Runs `npm run dev` as well as starts a web server so that you can continue developing and testing in the browser at http://localhost:5001 |
