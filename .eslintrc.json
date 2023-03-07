@@ -13,6 +13,6 @@
 	},
 	"ignorePatterns": ["**/dist/**", "**/lib/**", "**/module/**", "**/docs/**"],
 	"rules": {
-		"prettier/prettier": ["error"]
+		"prettier/prettier": [2,{ "useTabs": false}]
 	}
 }

@@ -12,11 +12,11 @@
  */
 
 const MainModule = () => {
-	return {
-		name: 'MyModule',
-		purpose:
-			'Get you started developing npm modules that works in server as well as browser',
-	};
+  return {
+    name: 'MyModule',
+    purpose:
+      'Get you started developing npm modules that work in node server as well as in a regular browser',
+  };
 };
 
 export { MainModule };
