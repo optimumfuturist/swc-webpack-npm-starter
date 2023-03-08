@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/optimumfuturist/webpack-npm-starter/main/docs/babel-webpack.png" alt="webpack babel npm starter pack" align="center" />
+<img src="./docs/webpack-npm-starter-readme.png" alt="webpack npm starter pack" align="center" />
 
 <br />
 
