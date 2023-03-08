@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'package.bundled.js',
     path: path.resolve(__dirname, './lib'),
-    library: 'BabelWebpack',
+    library: 'MyNpmModule',
     libraryTarget: 'umd',
     globalObject: 'this',
     umdNamedDefine: true,
@@ -13,12 +13,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.m?[jt]sx?$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
+          loader: 'swc-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            // parseMap: true,
           },
         },
       },

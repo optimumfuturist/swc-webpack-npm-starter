@@ -33,7 +33,7 @@ If you cloned this repo, remove the current  git repository by doing `rm -rf .gi
  * In progress
 
 ### 5. Tests your modules
- * Test your modules in browsers and nodejs imports
+ * Test your modules in browsers and nodejs modules
  * In your terminal, run `npm run build` and then copy the bundled js file from **lib** directory into **examples** directory.
  * For **nodejs** In your terminal, run `node examples/node-example.js` and test the results.
  * For **browsers** In your terminal, run `npm start`, then go to http://localhost:5001 and test the results.

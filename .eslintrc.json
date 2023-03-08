@@ -11,7 +11,7 @@
 		"ecmaVersion": 11,
 		"sourceType": "module"
 	},
-	"ignorePatterns": ["**/dist/**", "**/lib/**", "**/module/**", "**/docs/**"],
+	"ignorePatterns": ["**/dist/**", "**/lib/**", "**/module/**", "**/docs/**", "*.bundled.js", "*.min.js"],
 	"rules": {
 		"prettier/prettier": [2,{ "useTabs": false}]
 	}

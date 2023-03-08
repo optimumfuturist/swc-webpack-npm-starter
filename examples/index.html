@@ -4,13 +4,83 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Babel + Webpack UMD Export usage in browser</title>
+  <style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    section {
+        max-width: 80%;
+        margin: 0 10%;
+    }
+
+    kbd {
+      background-color: #eee;
+      border-radius: 3px;
+      border: 1px solid #b4b4b4;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+      color: #333;
+      display: inline-block;
+      font-size: 0.85em;
+      font-weight: 700;
+      line-height: 1;
+      padding: 2px 4px;
+      white-space: nowrap;
+  }
+
+
+  pre, code {
+    background-color: #f2f1f1;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    border: 1px solid transparent;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+  }
+
+  a > img {
+    vertical-align: bottom;
+  }
+
+
+  @media screen and (max-width: 1023px) {
+      section {
+          max-width: 90%;
+          margin: 0 5%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <section>
+    <h1>Browser example</h1>
+    <div>
+      Open console, press <kbd style="display: inline;">CTRL / CMD + Shift + i</kbd> to see the example. <br /><br /><strong>Or, below is another preview:</strong>
+    </div>
+    <pre id="message"></pre>
+    <br />
+    <h2>Node JS example</h2>
+    <p>For nodejs, run your terminal, navigate to <code>examples</code> directory and run <code>node node-example.js</code>. Check out <code>node-example.js</code> file</p>
+    <br />
+    <br />
+    <br />
+    <a href="https://github.com/optimumfuturist/babel-webpack-npm-starter/"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0tNC40NjYgMTkuNTljLS40MDUuMDc4LS41MzQtLjE3MS0uNTM0LS4zODR2LTIuMTk1YzAtLjc0Ny0uMjYyLTEuMjMzLS41NS0xLjQ4MSAxLjc4Mi0uMTk4IDMuNjU0LS44NzUgMy42NTQtMy45NDcgMC0uODc0LS4zMTItMS41ODgtLjgyMy0yLjE0Ny4wODItLjIwMi4zNTYtMS4wMTYtLjA3OS0yLjExNyAwIDAtLjY3MS0uMjE1LTIuMTk4LjgyLS42NC0uMTgtMS4zMjQtLjI2Ny0yLjAwNC0uMjcxLS42OC4wMDMtMS4zNjQuMDkxLTIuMDAzLjI2OS0xLjUyOC0xLjAzNS0yLjItLjgyLTIuMi0uODItLjQzNCAxLjEwMi0uMTYgMS45MTUtLjA3NyAyLjExOC0uNTEyLjU2LS44MjQgMS4yNzMtLjgyNCAyLjE0NyAwIDMuMDY0IDEuODY3IDMuNzUxIDMuNjQ1IDMuOTU0LS4yMjkuMi0uNDM2LjU1Mi0uNTA4IDEuMDctLjQ1Ny4yMDQtMS42MTQuNTU3LTIuMzI4LS42NjYgMCAwLS40MjMtLjc2OC0xLjIyNy0uODI1IDAgMC0uNzgtLjAxLS4wNTUuNDg3IDAgMCAuNTI1LjI0Ni44ODkgMS4xNyAwIDAgLjQ2MyAxLjQyOCAyLjY4OC45NDR2MS40ODljMCAuMjExLS4xMjkuNDU5LS41MjguMzg1LTMuMTgtMS4wNTctNS40NzItNC4wNTYtNS40NzItNy41OSAwLTQuNDE5IDMuNTgyLTggOC04czggMy41ODEgOCA4YzAgMy41MzMtMi4yODkgNi41MzEtNS40NjYgNy41OXoiLz48L3N2Zz4="> Github</a>
+  </section>
 	<script src="./package.bundled.js"></script>
 	<script>
-		if(BabelWebpack) {
-
-			console.log(BabelWebpack.MainModule())
+		if(MyNpmModule) {
+			const message = MyNpmModule.MainModule();
+      document.querySelector('#message').innerHTML = JSON.stringify(message);
+      console.log(message);
 		}
 	</script>
 </body>
