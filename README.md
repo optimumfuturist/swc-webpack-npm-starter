@@ -1,19 +1,19 @@
-<img src="https://raw.githubusercontent.com/optimumfuturist/babel-webpack-npm-starter/main/docs/babel-webpack.png" alt="webpack babel npm starter pack" align="center" />
+<img src="https://raw.githubusercontent.com/optimumfuturist/webpack-npm-starter/main/docs/babel-webpack.png" alt="webpack babel npm starter pack" align="center" />
 
 <br />
 
-# Babel + Webpack NPM Starter
-Babel + Webpack starter for npm package authoring
+# SWC + Webpack NPM Starter
+Webpack starter for npm package authoring
 
 ## Features
-* Babel 7 for modern javascript authoring
+* ~~Babel 7~~ SWC for modern javascript authoring
 * Webpack 5 for UMD bundling
 * ESLint, EditorConfig and Prettier for better dev tooling
 * JSDoc 3 for code documentation
 
 ## Getting Started
 ### 1. Clone this repo 
-Option A: Clone this repo, run `https://github.com/optimumfuturist/babel-webpack-npm-starter.git` <br />
+Option A: Clone this repo, run `https://github.com/optimumfuturist/webpack-npm-starter.git` <br />
 Option B: From the repo page, click on the "**Use this template**" green button (preferred).
 
 If you cloned this repo, remove the current  git repository by doing `rm -rf .git`. And then initialize your git repo, then push changes.
