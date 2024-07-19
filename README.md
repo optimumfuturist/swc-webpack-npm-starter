@@ -1,4 +1,4 @@
-<img src="./docs/webpack-npm-starter-readme.png" alt="webpack npm starter pack" align="center" />
+<img src="./webpack-npm-starter-readme.png" alt="webpack npm starter pack" align="center" />
 
 <br />
 

@@ -5,10 +5,12 @@
  * @module MainModule
  *
  * @example <caption>In browser, use libs/js file to load using "script" tag</caption>
+ *
  * <script src="./package.bundled.js"></script>
  * <script>
  * 		console.log(BabelWebpack.MainModule())
  * </script>
+ *
  */
 
 const MainModule = () => {
