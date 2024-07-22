@@ -5,6 +5,8 @@
 # SWC + Webpack NPM Starter
 Webpack starter for npm package authoring
 
+[![CodeQL](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/codeql.yml/badge.svg)](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/codeql.yml)
+
 ## Features
 * ~~Babel 7~~ SWC for modern javascript authoring
 * Webpack 5 for UMD bundling
