@@ -39,7 +39,7 @@
     "test": "Echo 'test'",
     "clean": "rimraf ./lib",
     "dev": "webpack -w --mode=development --devtool=inline-source-map",
-    "build": "npm run test && npm run clean && webpack --mode=production",
+    "build": "npm run clean && webpack --mode=production",
     "lint": "eslint ./src --fix",
     "docs": "npx jsdoc -c jsdoc.conf.json",
     "start": "serve -l 5001 examples",
