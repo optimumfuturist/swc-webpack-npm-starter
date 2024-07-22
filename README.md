@@ -12,7 +12,7 @@ Webpack starter for npm package authoring
 * ~~Babel 7~~ SWC for modern javascript authoring
 * Webpack 5 for UMD bundling
 * ESLint, EditorConfig and Prettier for better dev tooling
-* JSDoc 3 for code documentation
+* JSDoc 4 for code documentation
 
 ## Getting Started
 ### 1. Clone this repo 
