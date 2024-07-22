@@ -5,6 +5,7 @@
 # SWC + Webpack NPM Starter
 Webpack starter for npm package authoring
 
+[![Build](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/build.yml/badge.svg)](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/build.yml)
 [![CodeQL](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/codeql.yml/badge.svg)](https://github.com/optimumfuturist/swc-webpack-npm-starter/actions/workflows/codeql.yml)
 
 ## Features
