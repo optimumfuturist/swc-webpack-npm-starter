@@ -60,7 +60,7 @@
     "rimraf": "^5.0.0",
     "serve": "^14.2.3",
     "swc-loader": "^0.2.6",
-    "webpack": "^5.88.1",
+    "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4"
   }
 }
