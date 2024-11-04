@@ -47,7 +47,7 @@
     "start:docs": "concurrently \"npm run docs\" \"serve -l 5002 docs\""
   },
   "devDependencies": {
-    "@swc/core": "^1.7.26",
+    "@swc/core": "^1.8.0",
     "better-docs": "^2.7.4-dev.1",
     "concurrently": "^9.0.1",
     "eslint": "^8.57.1",
